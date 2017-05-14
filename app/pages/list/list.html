@@ -1,0 +1,12 @@
+<StackLayout>
+    <StackLayout>
+        <TimePicker class="example-container" #timePicker verticalAlignment="center"></TimePicker>
+        <TextField hint="Motivational Phrase" [(ngModel)]="mainPhrase"></TextField>
+        <Button text="set" (tap)="onTap()"></Button>
+    </StackLayout>
+
+    <StackLayout>
+        <HtmlView html="Main Phrase: {{ storedMainPhrase }}"></HtmlView>
+        <HtmlView html="Alarm Time: {{ hour }} : {{ minutes }}"></HtmlView>
+    </StackLayout>
+</StackLayout>
